@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalpeshwar Temple – Year-Round Panch Kedar</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Style consistency maintained */
+:root {
+  --saffron: #E8621A; --gold: #C9941A; --deep: #0D0A07;
+  --panel: #13100C; --card: #1A1510; --border: rgba(201,148,26,0.2);
+  --text: #E8DDD0; --muted: #8A7B6A; --white: #FAF6F0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+nav { position: sticky; top: 0; width: 100%; z-index: 999; padding: 0 40px; background: rgba(13,10,7,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+.back-btn { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 16px; border-radius: 4px; transition: 0.3s; }
+.back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+.hero-temple { height: 90vh; background: url('https://www.namasteindiatrip.org/wp-content/uploads/2019/01/Kalpeshwar-Mahadev.jpg') center/cover no-repeat; position: relative; display: flex; align-items: flex-end; padding: 60px 80px; }
+.hero-temple::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--deep) 10%, transparent 70%); }
+.hero-content { position: relative; z-index: 2; }
+h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: var(--white); }
+
+.section { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; }
+
+.info-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 20px; transition: 0.3s; }
+.info-card:hover { border-color: var(--gold); }
+.info-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 20px; }
+.card-body h4 { color: var(--gold); margin-bottom: 8px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery-img { height: 200px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.gallery-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(20%); }
+.gallery-img:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Char<span>Dham</span> Yatra</div>
+  <a class="back-btn" href="1.html">← Back to Portal</a>
+</nav>
+
+<div class="hero-temple">
+  <div class="hero-content">
+    <h1 style="color:var(--gold);">Kalpeshwar Temple</h1>
+    <p>2,200m · Panch Kedar · Open Throughout the Year</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="grid-2">
+    <div>
+      <h2>History & Mythology</h2>
+      <p>Kalpeshwar is the last of the **Panch Kedar** temples. It is unique because it remains open year-round when other high-altitude temples are closed due to snow. The temple is dedicated to Lord Shiva's matted hair (Jata). Legend says Indra gained back his lost kingdom after performing penance to Shiva here.</p>
+      
+      <h2 style="margin-top:40px;">How to Travel There</h2>
+      <ul>
+        <li><strong>Base:</strong> Urgam Valley, Chamoli district.</li>
+        <li><strong>Access:</strong> A short 1-2 km easy walk from the Urgam road-head.</li>
+        <li><strong>Rail:</strong> Rishikesh is the nearest major railway station (~250 km).</li>
+      </ul>
+    </div>
+    <div style="background: var(--card); padding: 30px; border-radius: 8px; border: 1px solid var(--border);">
+      <h4 style="color:var(--gold); margin-bottom:15px;">Quick Facts</h4>
+      <p><strong>Deity:</strong> Shiva (Jata)</p>
+      <p><strong>Altitude:</strong> 2,200 m</p>
+      <p><strong>Open:</strong> 365 Days</p>
+      <hr style="border:0; border-top:1px solid var(--border); margin:15px 0;">
+      <h4 style="color:var(--saffron);">Winter Places Nearby</h4>
+      <ul style="padding-left:15px; font-size:14px; margin-top:10px;">
+        <li><strong>Urgam Village:</strong> A scenic valley famous for its terraces and local agriculture.</li>
+        <li><strong>Dhyan Badri:</strong> One of the Sapt Badri temples located in the same valley.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Stays & Restaurants</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px;">
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/a8/db/92/getlstd-property-photo.jpg?w=700&h=400&s=1" alt="Urgam Stay">
+      <div class="card-body">
+        <h4>Aloha Apartment</h4>
+        <p>“Aloha Apartment by Blissful Ganges “ offers two categories of Room to guest , one is Studio apartment facing Mountain and beautiful landscapegarden view and other is Boutique Apartment 2 bed room facing the river. The resort offers 4 star facilities to visiting Guest. It has a scenic swimming pool , SPA , KIDs play area, YOGA room, Cycling Track and Free Vallet parking service.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/52/f9/a7/deluxe-king-bed.jpg?w=1400&h=800&s=1" alt="Mountain Food">
+      <div class="card-body">
+        <h4> Regenta Inn on the Ganges</h4>
+        <p>Located in the foothills of Himalayas, Rishikesh is famous for numerous temples, scenic beauty and a major hub for adventure sports. Nestled snugly on the banks of the tranquil River Ganges, Regenta Inn on the Ganges is a boutique hotel in the sanctum of Rishikesh. Stay in our comfortable rooms, designed in soft tones and overlooking the beautiful Ganges river and the Himalayas.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-img"><img src="https://media-cdn.tripadvisor.com/media/photo-o/05/b9/c9/e2/kalpeshwar-mandir.jpg" alt="Shrine Entrance"></div>
+    <div class="gallery-img"><img src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/201905/kalpeshwar-temple_3_051919013728.jpg" alt="Temple Exterior"></div>
+    <div class="gallery-img"><img src="https://www.gosahin.com/go/p/a/t1/1514908392_5%20Kalpeshwar.jpg" alt="Trek Path"></div>
+    <div class="gallery-img"><img src="https://t.eucdn.in/tourism/lg/kalpeshwar-4234950.webp" alt="Urgam Valley"></div>
+    <div class="gallery-img"><img src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/201905/kalpeshwar-temple_3_051919013728.jpg" alt="Puja Rituals"></div>
+    <div class="gallery-img"><img src="https://api.trekthehimalayas.com/images/HomePageImages/Desktop/e064fe8f-d88c-45ec-8488-c5bba4ae0d1c_kalpeshwar.webp" alt="Nature Meadows"></div>
+  </div>
+</div>
+
+<footer>
+  <strong>Char Dham Yatra</strong> | Devbhoomi Tranquility
+</footer>
+
+</body>
+</html>

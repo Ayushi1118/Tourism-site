@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kedarnath – The Abode of Shiva</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron: #E8621A; --gold: #C9941A; --deep: #0D0A07;
+  --panel: #13100C; --card: #1A1510; --border: rgba(201,148,26,0.2);
+  --text: #E8DDD0; --muted: #8A7B6A; --white: #FAF6F0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+nav { position: sticky; top: 0; width: 100%; z-index: 999; padding: 0 40px; background: rgba(13,10,7,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+.back-btn { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 16px; border-radius: 4px; transition: 0.3s; }
+.back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+/* Hero Section */
+.hero-temple { height: 90vh; background: url('https://travelchardham.com/sites/default/files/2024-04/Untitled-2-Recovered1_0.gif') center/cover no-repeat; position: relative; display: flex; align-items: flex-end; padding: 60px 80px; }
+.hero-temple::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--deep) 10%, rgba(13,10,7,0.4) 60%, transparent 100%); }
+.hero-content { position: relative; z-index: 2; }
+h1 { font-family: 'Playfair Display', serif; font-size: clamp(42px, 6vw, 72px); color: var(--white); line-height: 1.05; }
+
+/* Main Content */
+.section { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; }
+
+/* Cards Styling */
+.info-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 20px; transition: 0.3s; }
+.info-card:hover { border-color: var(--gold); }
+.info-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 20px; }
+.card-body h4 { color: var(--gold); margin-bottom: 8px; }
+
+/* Quick Facts Grid */
+.details-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.detail-row { display: flex; justify-content: space-between; padding: 15px 22px; font-size: 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
+.detail-row:nth-child(even) { background: var(--card); }
+.k { color: var(--muted); } .v { color: var(--white); font-weight: 500; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+.gallery-img { height: 220px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.gallery-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(20%); }
+.gallery-img:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+/* Map */
+.map-frame { width: 100%; height: 420px; border: 0; border-radius: 10px; filter: grayscale(20%) sepia(20%); margin-top: 20px; }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); background: var(--panel); }
+footer strong { color: var(--gold); }
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+.hero-content { animation: fadeUp 0.8s ease forwards; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Char<span>Dham</span> Yatra</div>
+  <a class="back-btn" href="1.html">← Back to Portal</a>
+</nav>
+
+<div class="hero-temple">
+  <div class="hero-content">
+    <div style="font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">3rd Dham · Rudraprayag · 3553 m</div>
+    <h1>Kedarnath Dham</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="grid-2">
+    <div>
+      <h2>History & Mythology</h2>
+      <p>Kedarnath is one of the 12 sacred Jyotirlingas of India. According to the Mahabharata, the Pandavas sought Lord Shiva here to seek forgiveness for the Kurukshetra war. Shiva, wishing to avoid them, took the form of a bull and dived into the earth, leaving his hump as the lingam. The ancient stone temple, believed to be over 1,000 years old, miraculously survived the catastrophic 2013 floods, which devotees regard as a divine act.</p>
+      
+      <h2 style="margin-top:40px;">Travelling Way</h2>
+      <p>Reaching the shrine requires a journey through rugged Himalayan terrain:</p>
+      <ul>
+        <li><b>Trek:</b> A 16–18 km trek from the base at Gaurikund.</li>
+        <li><b>Helicopter:</b> Services are available from Phata, Guptkashi, or Sirsi.</li>
+        <li><b>Railway:</b> The nearest major station is Rishikesh, approximately 216 km away.</li>
+      </ul>
+    </div>
+    
+    <div>
+      <div class="section-label" style="font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--saffron); margin-bottom: 12px;">Quick Facts</div>
+      <div class="details-grid">
+        <div class="detail-row"><span class="k">Deity</span><span class="v">Lord Shiva</span></div>
+        <div class="detail-row"><span class="k">Altitude</span><span class="v">3,553 m</span></div>
+        <div class="detail-row"><span class="k">Best Time</span><span class="v">May–June & Sep–Oct</span></div>
+        <div class="detail-row"><span class="k">District</span><span class="v">Rudraprayag</span></div>
+      </div>
+      
+      <h4 style="color:var(--saffron); margin-top:30px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Winter Worship</h4>
+      <p style="font-size: 13px; color: var(--muted); margin-top:10px;">When snow closes the temple, the deity is moved to the <b>Omkareshwar Temple in Ukhimath</b>. Nearby, the meadows of <b>Chopta</b> offer stunning winter views.</p>
+    </div>
+  </div>
+
+  <h2>Stays & Restaurants</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px;">
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/bd/be/34/aerial-view.jpg?w=400&h=-1&s=1" alt="Accommodation">
+      <div class="card-body">
+        <h4>Kedar River Retreat</h4>
+        <p>Kedar River Retreat is a riverside resort located on Kedarnath road, Sitapur, Uttarakhand. The resort is ideal for people who prefer leisure stay surrounded with nature,mountain and river view. The hotel have total 16 deluxe double bed and 3 family suite rooms facing to river view.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/7d/48/b2/kedarnath-nature-camp.jpg?w=1200&h=700&s=1" alt="Food">
+      <div class="card-body">
+        <h4>Kedarnath Nature camp By Nitin</h4>
+        <p>The accommodation offers an air conditioning, a heating, and a private bathroom.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-img"><img src="https://travelchardham.com/sites/default/files/2024-04/Untitled-2-Recovered1_0.gif" alt="Kedarnath Temple"></div>
+    <div class="gallery-img"><img src="https://thumbs.dreamstime.com/b/kedarnath-india-town-located-indian-state-uttarakhand-has-gained-importance-temple-68148279.jpg" alt="Aerial view of Kedarnath valley"></div>
+    <div class="gallery-img"><img src="https://thumbs.dreamstime.com/b/kedarnath-temple-shrine-covered-snow-hindu-dedicated-to-shiva-located-garhwal-himalayan-range-near-mandakini-272265241.jpg" alt="Kedarnath temple in winter snow"></div>
+  </div>
+
+  <h2 style="margin-top:60px;">Location on Map</h2>
+ <iframe class="map-frame"
+      src="https://www.google.com/maps?q=Kedarnath+Temple+Rudraprayag+Uttarakhand&output=embed"
+      allowfullscreen loading="lazy">
+    </iframe>
+</div>
+
+<footer>
+  <strong>Char Dham Yatra</strong> | Devbhoomi Uttarakhand | 2026 Official Guide
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gangotri – The Source of Ganga</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron: #E8621A; --gold: #C9941A; --deep: #0D0A07;
+  --panel: #13100C; --card: #1A1510; --border: rgba(201,148,26,0.2);
+  --text: #E8DDD0; --muted: #8A7B6A; --white: #FAF6F0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+nav { position: sticky; top: 0; width: 100%; z-index: 999; padding: 0 40px; background: rgba(13,10,7,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+.back-btn { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 16px; border-radius: 4px; transition: 0.3s; }
+.back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+/* Hero Section */
+.hero-temple { height: 90vh; background: url('https://media-cdn.tripadvisor.com/media/photo-o/13/ff/81/c8/in-front-of-gangotri.jpg') center/cover no-repeat; position: relative; display: flex; align-items: flex-end; padding: 60px 80px; }
+.hero-temple::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--deep) 10%, rgba(13,10,7,0.4) 60%, transparent 100%); }
+.hero-content { position: relative; z-index: 2; }
+h1 { font-family: 'Playfair Display', serif; font-size: clamp(42px, 6vw, 72px); color: var(--white); line-height: 1.05; }
+
+/* Main Content */
+.section { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; }
+
+/* Cards Styling */
+.info-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 20px; transition: 0.3s; }
+.info-card:hover { border-color: var(--gold); }
+.info-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 20px; }
+.card-body h4 { color: var(--gold); margin-bottom: 8px; }
+
+/* Quick Facts Grid */
+.details-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.detail-row { display: flex; justify-content: space-between; padding: 15px 22px; font-size: 14px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
+.detail-row:nth-child(even) { background: var(--card); }
+.k { color: var(--muted); } .v { color: var(--white); font-weight: 500; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px; }
+.gallery-img { height: 220px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.gallery-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(20%); }
+.gallery-img:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+/* Map */
+.map-frame { width: 100%; height: 420px; border: 0; border-radius: 10px; filter: grayscale(20%) sepia(20%); margin-top: 20px; }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); background: var(--panel); }
+@keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+.hero-content { animation: fadeUp 0.8s ease forwards; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Char<span>Dham</span> Yatra</div>
+  <a class="back-btn" href="1.html">← Back to Portal</a>
+</nav>
+
+<div class="hero-temple">
+  <div class="hero-content">
+    <div style="font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px;">2nd Dham · Uttarkashi · 3048 m</div>
+    <h1>Gangotri Dham</h1>
+  </div>
+</div>
+
+<div class="section">
+  <div class="grid-2">
+    <div>
+      <h2>History & Mythology</h2>
+      <p>Gangotri is the second stop on the yatra and the mythological origin of the River Ganga, the most sacred river in Hinduism. Legend says King Bhagirath performed intense penance here to bring the celestial Ganga down to Earth to liberate his ancestors. To soften her descent, Lord Shiva received her in his matted locks. The white granite temple was originally built by the Gorkha General Amar Singh Thapa in the 18th century and later renovated. The actual physical source at Gaumukh glacier is a rewarding 18 km trek further up from the shrine.</p>
+      
+      <h2 style="margin-top:40px;">Travelling Way</h2>
+      <p>Reaching the shrine involves a scenic journey through the Uttarkashi district:</p>
+      <ul>
+        <li><b>By Road:</b> Connected by a beautiful 100 km route from Uttarkashi town.</li>
+        <li><b>Railway:</b> The nearest major station is Rishikesh, approximately 230 km away.</li>
+        <li><b>Trek:</b> While the temple is road-accessible, an optional 18 km trek leads to the physical source at Gaumukh.</li>
+      </ul>
+    </div>
+    
+    <div>
+      <div style="font-size: 10px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--saffron); margin-bottom: 12px;">Quick Facts</div>
+      <div class="details-grid">
+        <div class="detail-row"><span class="k">Deity</span><span class="v">Goddess Ganga</span></div>
+        <div class="detail-row"><span class="k">Altitude</span><span class="v">3,048 m</span></div>
+        <div class="detail-row"><span class="k">Best Time</span><span class="v">May – November</span></div>
+        <div class="detail-row"><span class="k">River</span><span class="v">Bhagirathi</span></div>
+      </div>
+      
+      <h4 style="color:var(--saffron); margin-top:30px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Winter Worship</h4>
+      <p style="font-size: 13px; color: var(--muted); margin-top:10px;">When winter snow closes the high-altitude shrine, the deity is ceremonially moved to <b>Mukhba Village</b>, located 30 km downstream. Nearby <b>Harsil</b> is also a famous winter destination known for its apple orchards.</p>
+    </div>
+  </div>
+
+  <h2>Stays & Restaurants</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px;">
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/66/5f/1b/outside-view-of-cottage.jpg?w=1100&h=600&s=1" alt="Lodge">
+      <div class="card-body">
+        <h4>Nine Apple Resort</h4>
+        <p>Nine Apple Resort situated in between the Apple Garden has luxurious cottages in Dharali, Harshil lap of Himalaya Range.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/16/9b/26/mountain-village-stay.jpg?w=1000&h=600&s=1" alt="Food">
+      <div class="card-body">
+        <h4>Mountain Village Stay - Dharali Heights Harsil</h4>
+        <p>Mountain Village Stay – Dharali Heights, Harsil, Uttarkashi Located in Harsil, Mountain Village Stay - Dharali Heights offers a garden. Featuring room service, this property also provides guests with a terrace. </p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+     <div class="gallery-img">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-o/13/ff/81/c8/in-front-of-gangotri.jpg" alt="Gangotri Temple">
+      </div>
+      <div class="gallery-img">
+        <img src="https://thumbs.dreamstime.com/b/gomukh-snout-gangotri-glacier-gomukh-snout-gangotri-glacier-where-bhagirathi-ganges-river-originates-229497259.jpg" alt="Gaumukh Glacier near Gangotri">
+      </div>
+      <div class="gallery-img">
+        <img src="https://media.istockphoto.com/id/1351090403/photo/gangotri-town-by-the-side-of-bhagirathi-river.jpg?s=612x612&w=0&k=20&c=p7hk-3PX_54Rkc8s5D6ayLn8KCoDfPGnatMGFJ2YCYI=" alt="Bhagirathi river at Gangotri">
+      </div>
+      <div class="gallery-img">
+        <img src="https://www.chardham-pilgrimage-tour.com/assets/images/gangotri-banner2.webp" alt="Gangotri Banner">
+      </div>
+  </div>
+
+  <h2 style="margin-top:60px;">Location on Map</h2>
+  <iframe class="map-frame" src="https://www.google.com/maps?q=Gangotri+Temple+Uttarkashi+Uttarakhand&output=embed" allowfullscreen loading="lazy"></iframe>
+</div>
+
+<footer>
+  <strong>Char Dham Yatra</strong> | Devbhoomi Uttarakhand | 2026
+</footer>
+
+</body>
+</html>

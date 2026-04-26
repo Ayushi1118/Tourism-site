@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jageshwar Dham – Ancient Valley of 100 Temples</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Style consistency maintained */
+:root {
+  --saffron: #E8621A; --gold: #C9941A; --deep: #0D0A07;
+  --panel: #13100C; --card: #1A1510; --border: rgba(201,148,26,0.2);
+  --text: #E8DDD0; --muted: #8A7B6A; --white: #FAF6F0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+nav { position: sticky; top: 0; width: 100%; z-index: 999; padding: 0 40px; background: rgba(13,10,7,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+.back-btn { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 16px; border-radius: 4px; transition: 0.3s; }
+.back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+.hero-temple { height: 90vh; background: url('https://www.financialexpress.com/wp-content/uploads/2019/07/jageshwar660-1.jpg') center/cover no-repeat; position: relative; display: flex; align-items: flex-end; padding: 60px 80px; }
+.hero-temple::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--deep) 10%, transparent 70%); }
+.hero-content { position: relative; z-index: 2; }
+h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: var(--white); }
+
+.section { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; }
+
+.info-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 20px; transition: 0.3s; }
+.info-card:hover { border-color: var(--gold); }
+.info-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 20px; }
+.card-body h4 { color: var(--gold); margin-bottom: 8px; }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery-img { height: 200px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.gallery-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(20%); }
+.gallery-img:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Char<span>Dham</span> Yatra</div>
+  <a class="back-btn" href="1.html">← Back to Portal</a>
+</nav>
+
+<div class="hero-temple">
+  <div class="hero-content">
+    <h1 style="color:var(--gold);">Jageshwar Dham</h1>
+    <p>1,870m · Ancient Temple Complex · Almora</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="grid-2">
+    <div>
+      <h2>History & Heritage</h2>
+      <p>Jageshwar is a magnificent complex of over 100 ancient stone temples dedicated to Lord Shiva. Nestled within a dense forest of deodar cedars, the temples represent the **Maru-Gurjara** and Nagara architectural styles. The site is considered one of the holiest places in Kumaon and is believed to have been built by the Katyuri and Chand kings over a thousand years ago.</p>
+      
+      <h2 style="margin-top:40px;">How to Travel There</h2>
+      <ul>
+        <li><strong>Location:</strong> Almora district, Uttarakhand.</li>
+        <li><strong>Road:</strong> Approximately 36 km from Almora town.</li>
+        <li><strong>Rail:</strong> Kathgodam (125 km) is the nearest major railway station.</li>
+      </ul>
+    </div>
+    <div style="background: var(--card); padding: 30px; border-radius: 8px; border: 1px solid var(--border);">
+      <h4 style="color:var(--gold); margin-bottom:15px;">Quick Facts</h4>
+      <p><strong>Deity:</strong> Shiva (Lakulesh)</p>
+      <p><strong>Site:</strong> 100+ Ancient Shrines</p>
+      <p><strong>Environment:</strong> Deodar Forest</p>
+      <hr style="border:0; border-top:1px solid var(--border); margin:15px 0;">
+      <h4 style="color:var(--saffron);">Winter Places Nearby</h4>
+      <ul style="padding-left:15px; font-size:14px; margin-top:10px;">
+        <li><strong>Vridh Jageshwar:</strong> An ancient site offering panoramic Himalayan views nearby.</li>
+        <li><strong>Almora:</strong> The cultural capital of Kumaon with historic bazaars.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Stays & Restaurants</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px;">
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/0e/c8/89/kmvn-tourist-guest-house.jpg?w=1800&h=1000&s=1" alt="Jageshwar Stay">
+      <div class="card-body">
+        <h4>KMVN Tourist Guest House - Jageshwar</h4>
+        <p>Cozy resorts and guest houses located in the heart of the deodar forest near the temple complex.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/partner/bookingcom/photo-o/32/a2/6e/60/aranya-anandam-homest.jpg?w=1400&h=800&s=1" alt="Valley Cafe">
+      <div class="card-body">
+        <h4>Aranya Anandam Homestay</h4>
+        <p>Featuring garden views, Aranya nature retreat in Panuānaula offers accommodations and a garden. This property offers access to a terrace, free private parking, and free Wifi. On clear days, guests can head outside to enjoy the homestay's outdoor fire...</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-img"><img src="https://www.financialexpress.com/wp-content/uploads/2019/07/jageshwar660-1.jpg" alt="Jageshwar Overview"></div>
+    <div class="gallery-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/e0/7d/88/caption.jpg?w=1100&h=-1&s=1" alt="Ancient Carvings"></div>
+    <div class="gallery-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/e0/7f/d8/caption.jpg?w=1100&h=-1&s=1" alt="Forest Shrines"></div>
+    <div class="gallery-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/e0/7d/a4/caption.jpg?w=1100&h=-1&s=1" alt="Pillar Details"></div>
+    <div class="gallery-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/8a/e8/75/jageshwar-dham.jpg?w=2000&h=-1&s=1" alt="Kumaon Heritage"></div>
+    <div class="gallery-img"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/1f/02/d9/temple-view.jpg?w=600&h=-1&s=1" alt="Evening Atmosphere"></div>
+  </div>
+</div>
+
+<footer>
+  <strong>Char Dham Yatra</strong> | Heritage of Devbhoomi
+</footer>
+
+</body>
+</html>

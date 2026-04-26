@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kartik Swami Temple – The Balcony of Himalayas</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --saffron: #E8621A; --gold: #C9941A; --deep: #0D0A07;
+  --panel: #13100C; --card: #1A1510; --border: rgba(201,148,26,0.2);
+  --text: #E8DDD0; --muted: #8A7B6A; --white: #FAF6F0;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Jost', sans-serif; background: var(--deep); color: var(--text); line-height: 1.6; }
+nav { position: sticky; top: 0; width: 100%; z-index: 999; padding: 0 40px; background: rgba(13,10,7,0.95); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+.back-btn { font-size: 12px; font-weight: 600; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 16px; border-radius: 4px; transition: 0.3s; }
+.back-btn:hover { color: var(--gold); border-color: var(--gold); }
+
+/* Hero */
+.hero-temple { height: 90vh; background: url('https://www.templepurohit.com/wp-content/uploads/2015/12/KartikSwamiTemple.jpg') center/cover no-repeat; position: relative; display: flex; align-items: flex-end; padding: 60px 80px; }
+.hero-temple::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, var(--deep) 10%, transparent 70%); }
+.hero-content { position: relative; z-index: 2; }
+h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: var(--white); }
+
+/* Content Section */
+.section { max-width: 1100px; margin: 0 auto; padding: 60px 40px; }
+h2 { font-family: 'Playfair Display', serif; font-size: 32px; color: var(--white); margin-bottom: 20px; border-bottom: 1px solid var(--border); padding-bottom: 10px; }
+.grid-2 { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; margin-bottom: 50px; }
+
+/* Cards */
+.info-card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 20px; transition: 0.3s; }
+.info-card:hover { border-color: var(--gold); }
+.info-card img { width: 100%; height: 200px; object-fit: cover; }
+.card-body { padding: 20px; }
+.card-body h4 { color: var(--gold); margin-bottom: 8px; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery-img { height: 200px; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
+.gallery-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; filter: grayscale(20%); }
+.gallery-img:hover img { transform: scale(1.1); filter: grayscale(0%); }
+
+footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">Char<span>Dham</span> Yatra</div>
+  <a class="back-btn" href="1.html">← Back to Portal</a>
+</nav>
+
+<div class="hero-temple">
+  <div class="hero-content">
+    <h1 style="color:var(--gold);">Kartik Swami Temple</h1>
+    <p>3,050m · The Highest Shrine of Lord Kartikeya · Kronch Parvat</p>
+  </div>
+</div>
+
+<div class="section">
+  <div class="grid-2">
+    <div>
+      <h2>History & Mythology</h2>
+      <p>Perched atop the Kronch Parvat, Kartik Swami is dedicated to **Lord Kartikeya**, the elder son of Lord Shiva. According to Hindu mythology, Lord Shiva challenged his sons Ganesha and Kartikeya to circle the universe. While Kartikeya set off on his peacock, Ganesha simply circled his parents, declaring them his universe. When Ganesha was declared the winner, Kartikeya, in deep devotion and renunciation, offered his bones to his father. It is believed that his bones are still worshipped in the sanctum of this temple.</p>
+      
+      <h2 style="margin-top:40px;">How to Travel There</h2>
+      <p>The temple is a hidden gem in the Rudraprayag district, offering 360-degree views of the Himalayas.</p>
+      <ul>
+        <li><strong>Base Village:</strong> Kanakchauri, which is about 40 km from Rudraprayag.</li>
+        <li><strong>Trek:</strong> An easy to moderate 3 km uphill trek from Kanakchauri through dense rhododendron and oak forests.</li>
+        <li><strong>Road:</strong> Accessible via the Rishikesh-Rudraprayag-Pokhri road.</li>
+      </ul>
+    </div>
+    <div style="background: var(--card); padding: 30px; border-radius: 8px; border: 1px solid var(--border);">
+      <h4 style="color:var(--gold); margin-bottom:15px;">Quick Facts</h4>
+      <p><strong>Deity:</strong> Lord Kartikeya (Murugan)</p>
+      <p><strong>Altitude:</strong> 3,050 m (10,007 ft)</p>
+      <p><strong>Best Time:</strong> March to June (Rhododendrons) and Sept to Nov (Clear Skies).</p>
+      <hr style="border:0; border-top:1px solid var(--border); margin:15px 0;">
+      <h4 style="color:var(--saffron);">Nearby Attractions</h4>
+      <ul style="padding-left:15px; font-size:14px; margin-top:10px;">
+        <li><strong>Kanakchauri Village:</strong> The peaceful base village with sunset viewpoints.</li>
+        <li><strong>Rudraprayag:</strong> The holy confluence of Alaknanda and Mandakini rivers.</li>
+        <li><strong>Chopta:</strong> Located about 70 km away, known as the "Mini Switzerland".</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Stays & Restaurants</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 50px;">
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/a7/61/65/chopta-meadows-heritage.jpg?w=1200&h=700&s=1" alt="Mayadeep Stay">
+      <div class="card-body">
+        <h4>Chopta Meadows Heritage Camps</h4>
+        <p>Chopta meadows Heritage Camps is situated in Chopta, Uttarakhand which is mini Switzerland in Uttarakhand, India and a very popular hill station. Visiting Chopta Meadows Heritage Camps site is life altering experience. It is the only valley town in Uttarakhand, which has excellent place to experienced Spiritual, cool, Fun, Learning & adventure life.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/13/b1/dc/balbir-palace.jpg?w=400&h=-1&s=1" alt="Local Food">
+      <div class="card-body">
+        <h4>Hotel Sachin International</h4>
+        <p>Finding an ideal hotel in Rudra Prayag does not have to be difficult. Welcome to Hotel Sachin International, a nice option for travellers like you.
+Internet access is offered to guests, and rooms at Hotel Sachin International offer air conditioning.
+Guests of Hotel Sachin International are also welcome to enjoy an on-site restaurant. For travellers arriving by car, free parking is available.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-img"><img src="https://travelchardham.com/sites/default/files/2024-12/kartik-swami-temple.jpg" alt="Temple Ridge"></div>
+    <div class="gallery-img"><img src="https://t.eucdn.in/tourism/md/kartik-swami-5939047.webp"></div>
+    <div class="gallery-img"><img src="http://www.euttarakhand.com/wp-content/uploads/2014/08/Views-from-Kartikswami-during-evening.jpg" alt="Mountain View"></div>
+    <div class="gallery-img"><img src="https://himalayanlover.com/wp-content/uploads/2020/09/kartik-swami-temple.jpg" alt="Temple Bells"></div>
+    <div class="gallery-img"><img src="https://static2.tripoto.com/media/filter/nl/img/50383/TripDocument/kc14.jpg" alt="Forest Trail"></div>
+    <div class="gallery-img"><img src="https://i.pinimg.com/originals/f4/ab/d8/f4abd816e4e569f6c253c3d3349782f5.jpg" alt="Sunset Glow"></div>
+  </div>
+</div>
+
+<footer>
+  <strong>Char Dham Yatra</strong> | Devbhoomi Heritage
+</footer>
+
+</body>
+</html>
