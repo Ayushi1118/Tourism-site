@@ -11,6 +11,7 @@
         rel="stylesheet">
     <style>
         :root {
+            /*color theme*/
             --saffron: #E8621A;
             --gold: #C9941A;
             --deep: #0D0A07;
@@ -25,12 +26,14 @@
         *,
         *::before,
         *::after {
+            /*removes browser defaults*/
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
         body {
+            /*font, background colors*/
             font-family: 'Jost', sans-serif;
             background: var(--deep);
             color: var(--text);
@@ -38,10 +41,11 @@
             line-height: 1.6;
             scroll-behavior: smooth;
         }
-        
+
 
         nav {
             position: fixed;
+            /*navbar stays at top*/
             top: 0;
             width: 100%;
             z-index: 999;
@@ -66,6 +70,7 @@
         }
 
         .nav-links a {
+            /*menu links*/
             font-size: 11px;
             font-weight: 500;
             letter-spacing: 1.2px;
@@ -82,6 +87,7 @@
 
         /* Hero Section */
         .hero {
+            /*full screen banner image*/
             height: 100vh;
             background: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=2000') center/cover;
             display: flex;
@@ -94,6 +100,7 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, var(--deep) 10%, transparent 100%);
+            /*dark overlay for readability*/
         }
 
         .hero-content {
@@ -104,6 +111,7 @@
         }
 
         .hero h1 {
+            /*responsive font size*/
             font-family: 'Playfair Display', serif;
             font-size: clamp(50px, 8vw, 90px);
             color: var(--white);
@@ -117,6 +125,7 @@
 
         /* Section Styling */
         .section {
+            /*center content, limit width*/
             max-width: 1200px;
             margin: 0 auto;
             padding: 80px 40px;
@@ -145,6 +154,7 @@
 
         /* Grid Cards */
         .grid-container {
+            /*responsive grid, adjust no. of columns*/
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 20px;
@@ -152,6 +162,7 @@
         }
 
         .card {
+            /*style for each card*/
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: 8px;
@@ -162,6 +173,7 @@
         }
 
         .card:hover {
+            /*activate when user place cursor over it*/
             transform: translateY(-5px);
             border-color: var(--gold);
         }
@@ -214,6 +226,7 @@
         }
 
         .tip-card {
+            /*highlight important info*/
             background: var(--card);
             padding: 30px;
             border-left: 4px solid var(--saffron);
@@ -270,77 +283,123 @@
             background: var(--panel);
             border-top: 1px solid var(--border);
         }
-       /* Social Media Top Bar */
-.top-bar {
-    background: #080705; 
-    border-bottom: 1px solid var(--border);
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 34px;
-}
 
-.social-links { display: flex; gap: 18px; }
+        /* Social Media Top Bar */
+        .top-bar {
+            background: #080705;
+            border-bottom: 1px solid var(--border);
+            padding: 0 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 34px;
+        }
 
-.social-links a {
-    color: var(--muted);
-    font-size: 14px; /* Icon size */
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-}
+        .social-links {
+            display: flex;
+            gap: 18px;
+        }
 
-.social-links a:hover { color: var(--gold); }
+        .social-links a {
+            color: var(--muted);
+            font-size: 14px;
+            /* Icon size */
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+        }
 
-/* Adjust main nav to sit below the top bar */
-nav {
-    top: 34px !important; 
-}
+        .social-links a:hover {
+            color: var(--gold);
+        }
 
-/* Add padding to body so hero content isn't hidden */
-body { padding-top: 34px; }
+        /*activate when user place cursor over it*/
+
+        /* Adjust main nav to sit below the top bar */
+        nav {
+            top: 34px !important;
+        }
+
+        /* Add padding to body so hero content doesnt hide under top bar */
+        body {
+            padding-top: 100px;
+        }
+
+        .nav-links a.active {
+            color: var(--gold);
+            border-bottom: 2px solid var(--saffron);
+            padding-bottom: 4px;
+        }
+
+        .card:hover {
+            box-shadow: 0 10px 30px rgba(201, 148, 26, 0.3);
+        }
+
+        .fog {
+            position: fixed;
+            width: 200%;
+            height: 100%;
+            background: url("https://static.vecteezy.com/system/resources/previews/028/831/442/large_2x/a-mountains-forest-filled-with-lots-of-trees-covered-in-fog-wallpaper-generative-ai-free-photo.jpg") repeat-x;
+            opacity: 0.10;
+            animation: fogMove 60s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes fogMove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
     </style>
 </head>
 
+
+
 <body>
+    <div class="fog"></div>
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
     <div class="top-bar">
-    <div class="social-links">
-        <a href="https://facebook.com/uttarakhandtourism" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    
-        <a href="https://instagram.com/uttarakhandtourism" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@UttarakhandTourismofficial" target="_blank"><i class="fab fa-youtube"></i></a>
+        <div class="social-links">
+            <a href="https://facebook.com/uttarakhandtourism" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/uttarakhandtourism" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@UttarakhandTourismofficial" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+        </div>
+        <div class="top-bar-meta" style="font-size: 10px; color: var(--gold); letter-spacing: 1px; font-weight: 600;">
+        </div>
     </div>
-    <div class="top-bar-meta" style="font-size: 10px; color: var(--gold); letter-spacing: 1px; font-weight: 600;">
-    </div>
-</div>
     <nav>
         <div class="nav-brand">Char<span>Dham</span></div>
         <div class="nav-links">
-            <a href="#about">Uttarakhand</a>
-            <a href="#dhams">The Dhams</a>
-            <a href="#other-temples">Other Temples</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#tips">Travel Tips</a>
+            <a href="#about" class="nav-link">Uttarakhand</a>
+            <a href="#dhams" class="nav-link">The Dhams</a>
+            <a href="#other-temples" class="nav-link">Other Temples</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#tips" class="nav-link">Travel Tips</a>
         </div>
     </nav>
 
     <div class="hero">
         <div class="hero-content">
             <span class="section-label">Devbhoomi · Land of the Gods</span>
-            <h1>The Sacred <em>Yatra</em></h1>
+            <h1> Chardham</h1>
             <p>A journey through the Garhwal Himalayas to seek liberation and peace.</p>
         </div>
     </div>
 
     <section class="section" id="about">
-        <span class="section-label">Geography & Spirit</span>
         <h2>About Uttarakhand & Char Dham</h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <div>style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;"
             <p>Uttarakhand, known as <strong>Devbhoomi</strong>, is nested in the lap of the Himalayas. It is the
                 birthplace of the holy rivers Ganga and Yamuna. The Char Dham circuit—Yamunotri, Gangotri, Kedarnath,
                 and Badrinath—represents the pinnacle of Hindu pilgrimage, traditionally visited in a clockwise
@@ -377,8 +436,9 @@ body { padding-top: 34px; }
                 </div>
             </a>
             <a href="kedarnath.html" class="card">
-                <div class="card-img"><img
-                        src="https://travelchardham.com/sites/default/files/2024-04/Untitled-2-Recovered1_0.gif"></div>
+                <div class="card-img">
+                    <img src="https://travelchardham.com/sites/default/files/2024-04/Untitled-2-Recovered1_0.gif" />
+                </div>
                 <div class="card-body">
                     <span class="card-meta">3rd Stop · 3553m</span>
                     <h3>Kedarnath</h3>
@@ -420,7 +480,7 @@ body { padding-top: 34px; }
             </a>
             <a href="rudranath.html" class="card">
                 <div class="card-img"><img
-                        src="https://www.chardham-pilgrimage-tour.com/assets/images/madhyamaheshwar-banner2.webp"
+                        src="https://wallpapercave.com/wp/wp14704427.jpg"
                         alt="Rudranath"></div>
                 <div class="card-body">
                     <span class="card-meta">Chamoli · 3600m</span>
@@ -498,7 +558,7 @@ body { padding-top: 34px; }
         </div>
     </section>
 
-  <section class="section" id="tips">
+    <section class="section" id="tips">
         <span class="section-label">Traveler's Guide</span>
         <h2>6 Essential Tips</h2>
         <div class="tips-grid">
@@ -534,52 +594,42 @@ body { padding-top: 34px; }
         </div>
     </section>
 
-    <div style="background: rgba(201, 148, 26, 0.1); border-top: 1px solid var(--border); padding: 40px 20px; text-align: center;">
+    <div
+        style="background: rgba(201, 148, 26, 0.1); border-top: 1px solid var(--border); padding: 40px 20px; text-align: center;">
         <p style="font-size: 16px; color: var(--white); letter-spacing: 1px;">
-            Before travelling, don't forget to register on the 
-            <a href="https://registrationandtouristcare.uk.gov.in/" target="_blank" style="color: var(--saffron); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--saffron);">
-              Official Yatra Portal
+            Before travelling, don't forget to register on the
+            <a href="https://registrationandtouristcare.uk.gov.in/" target="_blank"
+                style="color: var(--saffron); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--saffron);">
+                Official Yatra Portal
             </a>
         </p>
     </div>
 
     <footer>
         <p><strong>Char Dham Yatra</strong> | 2026 Official Guide</p>
-        
+
         <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05);">
-            <p style="color: var(--white); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;">
+            <p
+                style="color: var(--white); font-size: 14px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 15px;">
                 <b>🚨 Emergency & Support Helplines</b>
             </p>
             <div style="font-size: 13px; color: var(--text); line-height: 2;">
                 <p>STATE EMERGENCY: <strong style="color: var(--saffron); font-size: 16px;">112</strong></p>
                 <p>TOURIST CARE (TOLL FREE): <strong style="color: var(--gold); font-size: 16px;">1364</strong></p>
-                <p>HELPLINE: <strong style="color: var(--white);">0135 3520100</strong> | TOURISM: <strong style="color: var(--white);">0135-2559898</strong></p>
+                <p>HELPLINE: <strong style="color: var(--white);">0135 3520100</strong> | TOURISM: <strong
+                        style="color: var(--white);">0135-2559898</strong></p>
                 <p>DISASTER MANAGEMENT: <strong style="color: var(--saffron);">1070</strong></p>
             </div>
         </div>
 
         <div style="margin-top: 20px; font-size: 12px;">
-            <p style="color: var(--muted);">Official Portal: 
-                <a href="https://uttarakhandtourism.gov.in/" target="_blank" style="color: var(--gold); text-decoration: none;">
+            <p style="color: var(--muted);">Official Portal:
+                <a href="https://uttarakhandtourism.gov.in/" target="_blank"
+                    style="color: var(--gold); text-decoration: none;">
                     uttarakhandtourism.gov.in
                 </a>
             </p>
         </div>
     </footer>
-
-    <footer>
-        <p><strong>Char Dham Yatra</strong> | 2026 Official Guide</p>
-        <div style="margin-top: 15px; font-size: 12px; color: var(--muted); line-height: 1.6;">
-            <p><b>Tourist Care Uttarakhand</b></p>
-            <p>Toll Free: <span style="color: var(--gold);">1364</span> | Support: <span
-                    style="color: var(--gold);">0135 3520100</span></p>
-            <p style="margin-top: 10px;">
-                Official Portal: <a href="https://uttarakhandtourism.gov.in/" target="_blank"
-                    style="color: var(--saffron); text-decoration: none;">uttarakhandtourism.gov.in</a>
-            </p>
-        </div>
-    </footer>
-
 </body>
-
 </html>
